@@ -1,0 +1,137 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding: 40px 0;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        color: white;
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            span{
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+                span{
+                    font-size: 32px;
+                    font-weight: 500;
+                    color: #C778DD;
+                    margin-right: 2px;
+                }
+            }
+
+            div{
+                height: 1px;
+                width: 500px;
+                background-color: #C778DD;
+            }
+        }
+        
+    }
+
+    .work{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        gap: 16px;
+        row-gap: 30px;
+
+        .card-item{
+            min-width: 300px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ABB2BF;
+
+            .image{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                color: #ABB2BF;
+            }
+
+            .lang{
+                padding: 5px 10px;
+                border: 1px solid #ABB2BF;
+                border-left: none;
+                border-right: none;
+            }
+
+            .desc{
+                padding: 15px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+
+                h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                .btn-container{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px 0;
+
+                    a{
+                        text-decoration: none;
+                        padding: 8px 16px;
+                        transition: all 0.5s;
+                    }
+
+                    .live{
+                        border: 1px solid #C778DD;
+                        color: white;
+
+                        :hover{
+                            background-color: rgba(199, 120, 221, 0.2);
+                        }
+                    }
+
+                    .cached{
+                        border: 1px solid #ABB2BF;
+                        color: white;
+
+                        :hover{
+                            background: rgba(171, 178, 191, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+// @media (max-width: 480px)  {
+//     .work {
+//       background-color: red;
+//       grid-template-columns: 1fr;
+//     }
+//   }

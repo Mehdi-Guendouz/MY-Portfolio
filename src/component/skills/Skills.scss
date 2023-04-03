@@ -1,0 +1,155 @@
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // gap: 30px;
+    padding: 150px 0;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        color: white;
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            span{
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+                span{
+                    font-size: 32px;
+                    font-weight: 500;
+                    color: #C778DD;
+                    margin-right: 2px;
+                }
+            }
+
+            div{
+                height: 1px;
+                width: 500px;
+                background-color: #C778DD;
+            }
+        }
+        
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+
+
+        .shapes{
+            flex: 1;
+            padding: 0 30px;
+            position: relative;
+
+            .square{
+                border: 1px solid #ABB2BF;
+                position: absolute;
+            }
+
+            .square-lg{
+                width: 86px;
+                height: 86px;
+                right: 140px;
+                bottom: 50px;
+            }
+
+            .square-sm{
+                width: 52px;
+                height: 52px;
+                top: 150px;
+                right: 100px;
+            }
+
+            img{
+                position: absolute;
+            }
+
+            .shape1{
+                top: -100px;
+                left: 0;
+            }
+
+            .shape2{
+                right: 170px;
+                top: 40px;
+            }
+
+            .shape3{
+                top: 80px;
+                left: 20px;
+            }
+        }   
+
+        .content{
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            row-gap: 5px;
+            column-gap: 10px;
+            grid-template-areas: 
+            "first second third"
+            ". fourth fifth"
+            ". . sixth"
+            ;
+
+            // be careful with this when trying the responsive design
+            transform: translateY(70px);
+
+            .first{
+                grid-area: first;
+            }
+            .second{
+                grid-area: second;
+            }
+            .third{
+                grid-area: third;
+            }
+            .fourth{
+                grid-area: fourth;
+            }
+            .fifth{
+                grid-area: fifth;
+            }
+            .sixth{
+                grid-area: sixth;
+            }
+
+            .item{
+                width: 230px;
+                border: 1px solid #ABB2BF;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                
+
+                h4{
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 600;color: white;
+                    text-transform: capitalize;
+                    border-bottom: 1px solid #ABB2BF;
+                }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #ABB2BF;
+                    padding: 10px ;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+}

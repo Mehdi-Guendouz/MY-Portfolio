@@ -129,9 +129,104 @@
 }
 
 
-// @media (max-width: 480px)  {
-//     .work {
-//       background-color: red;
-//       grid-template-columns: 1fr;
-//     }
-//   }
+@media (max-width: 1250px)  {
+   .project-container{
+
+    .top{
+
+        .line{
+            width: 300px;
+        }
+    }
+
+    .work{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   }
+  }
+
+
+  @media (max-width: 786px)  {
+    .project-container{
+        
+     .top{
+        padding: 0 20px;
+     }
+ 
+     .work{
+         grid-template-columns: repeat(2, 1fr);
+         padding: 0 20px;
+
+         .card-item{
+            width: 250px;
+         }
+     }
+    }
+   }
+
+   @media (max-width: 655px)  {
+    .project-container{
+        
+     .top{
+
+        div{
+            gap: 10px;
+            h3{
+                font-size: 28px;
+
+                span{
+                    font-size: 28px;
+                }
+            }
+        }
+
+        span{
+           font-size: 14px;
+        }
+
+        .line{
+            width: 50px;
+        }
+     }
+ 
+     .work{
+         grid-template-columns: 1fr;
+
+         .card-item{
+            width: 250px;
+         }
+     }
+    }
+   }
+
+
+   
+   @media (max-width: 400px)  {
+    .project-container{
+     .top{
+        div{
+            h3{
+                font-size: 20px;
+
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        span{
+           font-size: 14px;
+        }
+
+        .line{
+            width: 20px;
+            display: none;
+        }
+     }
+ 
+     .work{
+         grid-template-columns: 1fr;
+         padding: 0px ;
+     }
+    }
+   }

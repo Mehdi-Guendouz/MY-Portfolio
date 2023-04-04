@@ -27,14 +27,22 @@ const Form = () => {
         <div className='form-container'>
             <form onSubmit={handleSubmit} ref={form}>
                 <div className="item">
-                    <input type="text" placeholder='Name' value={name} onChange={(event) => setName(event.target.value)} name="name" />
-                    <input type="email" placeholder='Email' value={email} onChange={(event) => setEmail(event.target.value)} name="email" />
+                    <div className="form-item">
+                        <input type="text" value={name} onChange={(event) => setName(event.target.value)} name="name" />
+                        <span >Name</span>
+                    </div>
+                    <div className="form-item">
+                        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} name="email" />
+                        <span>Email</span>
+                    </div>
                 </div>
                 <div className="item">
-                    <input type="text" placeholder='Title' value={title} onChange={(event) => setTitle(event.target.value)} name="title" />
+                    <input type="text" value={title} onChange={(event) => setTitle(event.target.value)} name="title" />
+                    <span >Title</span>
                 </div>
                 <div className="item">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder='Message' value={message} onChange={(event) => setMessage(event.target.value)} ></textarea>
+                    <textarea name="message" id="message" cols="30" rows="5"  value={message} onChange={(event) => setMessage(event.target.value)} ></textarea>
+                    <span>Message</span>
                 </div>
                 <button type="submit">Send</button>
             </form>

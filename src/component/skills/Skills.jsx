@@ -12,11 +12,7 @@ const Skills = () => {
             </div>
             <div className="bottom">
                 <div className="shapes">
-                    <img src="./icons/points.png" alt="" className='shape1' />
-                    <img src="./icons/points.png" alt="" className='shape2' />
-                    <img src="./icons/second.png" alt="" className='shape3' />
-                    <div className='square-lg square'></div>
-                    <div className='square-sm square'></div>
+                    <img src="./images/skills.png" alt="" />
                 </div>
                 <div className="content">
                     <div className="item first">

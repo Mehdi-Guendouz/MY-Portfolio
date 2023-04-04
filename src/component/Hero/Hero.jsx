@@ -32,12 +32,7 @@ const Hero = () => {
           return <span className='typing'>{currentWord}</span>;
       };
 
-      // cursor position for the colorful line
-      // const [position, setPosition] = useState({ x: 0, y: 0 });
 
-      // const handleMouseMove = (event) => {
-      //   setPosition({ x: event.clientX, y: event.clientY });
-      // };
 
 
 
@@ -45,18 +40,8 @@ const Hero = () => {
 
 
         <div className='hero-container' >
-          {/* <div
-            style={{
-              position: 'absolute',
-              left: position.x,
-              top: position.y,
-              height: '2px',
-              width: '100%',
-              backgroundColor: 'blue',
-            }}
-          /> */}
             <div className="left">
-                <h1>Hi!! I AM Mehdi Your <TypingEffect words={words} /> <br /><span className='typing'>Web Developer</span></h1>
+                <h1>Hi!! I AM Mehdi Your <br className='break-line' /> <TypingEffect words={words} /> <br /><span className='typing'>Web Developer</span></h1>
                 <p>Crafting digital experiences with passion and <br /> precision</p>
                 <Link to={"/"}>Contact me !!</Link>
             </div>
@@ -64,7 +49,7 @@ const Hero = () => {
                 <img src="./images/portfolioTest.JPG" alt="" />
                 <div className='card'>
                     <div className="square"></div>
-                    currently working on  <span> portfolio</span>
+                    <div className="content">currently working on  <span> portfolio</span></div>
                 </div>
             </div>
         </div>

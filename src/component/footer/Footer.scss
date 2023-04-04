@@ -69,3 +69,14 @@
         margin-bottom: 30px;
     }
 }
+
+
+@media (max-width: 480px){
+    .footer-container{
+        .top{
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+        }
+    }
+}

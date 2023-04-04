@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    // gap: 30px;
+    gap: 30px;
     padding: 100px 0 200px 0;
 
     .top{
@@ -86,4 +86,44 @@
         }
     }
 
+}
+
+
+@media (max-width: 810px) {
+    .contact-container{
+        .top{
+            div{
+                padding: 0 20px;
+                
+                h3{
+                    font-size: 20px;
+    
+                    span{
+                        font-size: 20px;
+                    }
+                }
+
+                .line{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 880px){
+    .contact-container{
+        padding-inline: 0;
+        .bottom{
+            flex-direction: column;
+            gap: 50px;
+            align-items: flex-start;
+            padding: 0 20px;
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
 }

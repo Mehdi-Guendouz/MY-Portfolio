@@ -149,14 +149,29 @@
 
 @media (max-width: 850px)  {
     .skills-container{
-
         .top{
-            padding: 0 20px;
+            div{
+                padding: 0 20px;
+                
+                h3{
+                    font-size: 20px;
+    
+                    span{
+                        font-size: 20px;
+                    }
+                }
 
-            .line{
-                width: 200px;
+                .line{
+                    width: 100px;
+                }
             }
+
+        .line{
+            width: 50px;
         }
+     }
+    }
+
         
         .bottom{
             flex-direction: column;
@@ -178,7 +193,6 @@
             }
         }
     }
-}
  
 
 @media (max-width: 500px)  {

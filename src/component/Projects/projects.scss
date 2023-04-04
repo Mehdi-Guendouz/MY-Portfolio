@@ -146,6 +146,38 @@
   }
 
 
+  @media (max-width: 810px){
+    .project-container{
+        .top{
+            div{
+                padding: 0 20px;
+                
+                h3{
+                    font-size: 20px;
+    
+                    span{
+                        font-size: 20px;
+                    }
+                }
+
+                .line{
+                    width: 100px;
+                }
+            }
+        
+
+        span{
+           font-size: 14px;
+        }
+
+        .line{
+            width: 50px;
+        }
+     }
+    }
+  }
+
+
   @media (max-width: 786px)  {
     .project-container{
         
@@ -167,28 +199,12 @@
    @media (max-width: 655px)  {
     .project-container{
         
-     .top{
-
-        div{
-            gap: 10px;
-            h3{
-                font-size: 28px;
-
-                span{
-                    font-size: 28px;
-                }
+        .top{
+            .line{
+                display: block;
+                width: 20px;
             }
-        }
-
-        span{
-           font-size: 14px;
-        }
-
-        .line{
-            width: 50px;
-        }
-     }
- 
+         }
      .work{
          grid-template-columns: 1fr;
 
@@ -201,32 +217,22 @@
 
 
    
-   @media (max-width: 400px)  {
+   @media (max-width: 450px)  {
     .project-container{
-     .top{
-        div{
-            h3{
-                font-size: 20px;
 
-                span{
-                    font-size: 20px;
-                }
+        overflow: hidden;
+        
+        .top{
+            .line{
+                display: none;
             }
-        }
-
-        span{
-           font-size: 14px;
-        }
-
-        .line{
-            width: 20px;
-            display: none;
-        }
+         }
+         .work{
+             padding: 0px ;
+             .card-item{
+                width: 230px;
+             }
+         }
      }
  
-     .work{
-         grid-template-columns: 1fr;
-         padding: 0px ;
-     }
     }
-   }

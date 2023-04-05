@@ -17,7 +17,7 @@ const Home = () => {
                 <Navbar />
                 <Hero />
                 <Quote />
-                <Projects />
+                <Projects title={"Projects"}/>
                 <Skills />
                 <About />
                 <Contact />

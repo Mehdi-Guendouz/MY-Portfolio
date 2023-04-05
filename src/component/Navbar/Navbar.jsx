@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState  } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import "./Navbar.scss"
 import { GoMarkGithub } from 'react-icons/go';
 import { SiLinkedin } from 'react-icons/si';
@@ -8,6 +8,9 @@ import { MdEmail } from 'react-icons/md';
 const Navbar = () => {
 
     const [menu, setMenu] = useState(false);
+
+    const path = useParams()
+    console.log(path)
     
     return (
         <div className='nav-container'>

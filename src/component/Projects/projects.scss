@@ -188,6 +188,7 @@
      .work{
          grid-template-columns: repeat(2, 1fr);
          padding: 0 20px;
+         column-gap: 10px;
 
          .card-item{
             width: 250px;
@@ -202,7 +203,7 @@
         .top{
             .line{
                 display: block;
-                width: 20px;
+                width: 15px;
             }
          }
      .work{
@@ -223,6 +224,8 @@
         overflow: hidden;
         
         .top{
+            // width: 100%;
+            padding: 0 10px;
             .line{
                 display: none;
             }

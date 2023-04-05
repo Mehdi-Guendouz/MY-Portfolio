@@ -1,9 +1,46 @@
 import React from 'react';
+import "./Contacts.scss";
+import Contact from '../../component/Contact/Contact';
+import { GoMarkGithub } from 'react-icons/go';
+import { SiLinkedin } from 'react-icons/si';
+import { MdEmail } from 'react-icons/md';
+import { SiDiscord } from 'react-icons/si';
+import { RiInstagramFill } from 'react-icons/ri';
+import { CopyButton, Tooltip } from '@mantine/core';
+import Navbar from '../../component/Navbar/Navbar';
+import Footer from '../../component/footer/Footer';
 
 const Contacts = () => {
     return (
-        <div>
-            
+        <div className='contacts-container'>
+            <div className="wrapper">
+                <Navbar />
+                <div className="up">
+                    <h1><span>/</span>Contacts</h1>
+                    <p>Contact me</p>
+                </div>
+                <Contact title={false}/>
+                <div className="media-container">
+                    <h3><span>#</span>All-Media</h3>
+                    <div className="social">
+                        <a href='https://github.com/MehidGN' target='_blank' rel="noreferrer"><GoMarkGithub className='icon'/> /MehidGN</a>
+                        <a href='https://www.linkedin.com/in/mehdi-guendouz-06b59b225/' target='_blank' rel="noreferrer"><SiLinkedin className='icon'/> /mehdi-guendouz</a>
+                        <a href='https://www.instagram.com/mehdi__guendouz/' target='_blank' rel="noreferrer"><RiInstagramFill className='icon'/> /mehdi__guendouz</a>
+                        <a href="mailto:m_guendouz@estin.dz" target='_blank' rel="noreferrer"><MdEmail className='icon'/> /m_guendouz@estin.dz</a>
+                        <CopyButton value="Guendouz-Mehdi#5550" timeout={2000} >
+                            {({ copied, copy }) => (
+                                <Tooltip label={copied ? 'Copied' : 'Copy'} withArrow position="right">
+                                    <div className="item" onClick={copy}>
+                                        <SiDiscord className='icon'/> 
+                                        <span>/Guendouz-Mehdi#5550</span>
+                                    </div>
+                                </Tooltip>
+                            )}
+                            </CopyButton>
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </div>
     );
 }

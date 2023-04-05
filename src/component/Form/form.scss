@@ -69,6 +69,36 @@
 
             }
         }
+
+        .card{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border: 1px solid #ABB2BF;
+            color: #ABB2BF;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            width: 100%;
+
+            .content{
+                padding: 8px 10px;
+            }
+
+            .square{
+                width: 16px;
+                height: 16px;
+                margin-left: 10px;
+            }
+            
+            .green{
+                background-color: #2ecc71;
+            }
+            
+            .red{
+                background-color: #e74c3c;
+            }
+        }
     }
 }
 

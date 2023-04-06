@@ -4,11 +4,11 @@ import "./AllProjects.scss"
 import Navbar from '../../component/Navbar/Navbar';
 import Footer from '../../component/footer/Footer';
 
-const AllProjects = () => {
+const AllProjects = ({path}) => {
     return (
         <div className='Projects-container'>
             <div className="wrapper">
-                <Navbar />
+                <Navbar path={path} />
                 <div className="up">
                     <h1><span>/</span>Projects</h1>
                     <p>Check my projects</p>

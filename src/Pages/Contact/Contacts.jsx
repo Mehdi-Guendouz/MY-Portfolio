@@ -10,11 +10,11 @@ import { CopyButton, Tooltip } from '@mantine/core';
 import Navbar from '../../component/Navbar/Navbar';
 import Footer from '../../component/footer/Footer';
 
-const Contacts = () => {
+const Contacts = ({path}) => {
     return (
         <div className='contacts-container'>
             <div className="wrapper">
-                <Navbar />
+                <Navbar path={path} />
                 <div className="up">
                     <h1><span>/</span>Contacts</h1>
                     <p>Contact me</p>

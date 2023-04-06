@@ -10,9 +10,9 @@
     // background-color: red;
 
     .falling-contact{
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: -100px;
+        left: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -52,9 +52,12 @@
     }
 
     h1{
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
+        
+        a{
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
     }
 
     nav{
@@ -76,12 +79,20 @@
                     margin-right: 2px;
                 }
                 a{
-                    color: gray;
                     text-decoration: none;
 
                     &:hover{
                         color: white;
                     }
+                }
+
+                .color-white{
+                    color: white;
+                    
+                }
+                .color-gray{
+                    color: #ABB2BF;
+
                 }
             }
         }
@@ -129,7 +140,7 @@
     .nav-container{
        
         .falling-contact{
-            display: none;
+            // display: none;
         }
         
         h1{
@@ -203,7 +214,7 @@
                 gap: 40px;
 
                 a{
-                    color: white;
+                    // color: white;
                     font-size: 32px;
                     font-weight: 500;
 
@@ -211,6 +222,15 @@
                         color: #C778DD;
                         margin-right: 2px;
                     }
+
+                }
+                .color-white{
+                    color: white;
+                    
+                }
+                .color-gray{
+                    color: #ABB2BF;
+    
                 }
             }
 

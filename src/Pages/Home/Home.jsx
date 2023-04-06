@@ -11,6 +11,7 @@ import Footer from '../../component/footer/Footer';
 
 
 const Home = () => {
+
     return (
         <div className='home-container'>
             <div className="wrapper">

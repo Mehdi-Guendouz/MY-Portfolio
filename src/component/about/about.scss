@@ -45,7 +45,7 @@
     .bottom{
         display: flex;
         align-items: center;
-
+        gap: 20px;
 
         .left{
             flex: 1;
@@ -59,6 +59,7 @@
                 color: #ABB2BF;
                 max-width: 500px;
                 text-align: justify;
+                line-height: 25px;
             }
 
             a{
@@ -156,7 +157,7 @@
 
 
 
-@media (max-width: 600px){
+@media (max-width: 640px){
     .about-container{
         
         

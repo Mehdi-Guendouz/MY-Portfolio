@@ -1,16 +1,14 @@
 import React, { useState  } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./Navbar.scss"
 import { GoMarkGithub } from 'react-icons/go';
 import { SiLinkedin } from 'react-icons/si';
 import { MdEmail } from 'react-icons/md';
 
-const Navbar = () => {
+const Navbar = ({path = ""}) => {
 
     const [menu, setMenu] = useState(false);
 
-    const path = useParams()
-    console.log(path)
     
     return (
         <div className='nav-container'>
@@ -23,13 +21,13 @@ const Navbar = () => {
                 </div>
             </div>
             {/* <img src="" alt="" /> */}
-            <h1>Mehdi</h1>
+            <h1><Link to='/'>Mehdi</Link></h1>
             <nav>
                 <ul>
-                    <li><Link ><span>#</span>home</Link></li>
-                    <li><Link ><span>#</span>work</Link></li>
-                    <li><Link ><span>#</span>about-me</Link></li>
-                    <li><Link ><span>#</span>Contacts</Link></li>
+                    <li><Link className={`${path === "" ? "color-white" : "color-gray"}`} to='/'><span>#</span>home</Link></li>
+                    <li><Link className={`${path === "projects" ? "color-white" : "color-gray"}`} to='/projects'><span>#</span>work</Link></li>
+                    <li><Link className={`${path === "about" ? "color-white" : "color-gray"}`} to='/about'><span>#</span>about-me</Link></li>
+                    <li><Link className={`${path === "contacts" ? "color-white" : "color-gray"}`} to='/contacts'><span>#</span>Contacts</Link></li>
                 </ul>
             </nav>
 
@@ -39,10 +37,10 @@ const Navbar = () => {
             {menu && <div className="sidebar-container">
                 <div className="sidebar">
                     <div className="links">
-                        <Link ><span>#</span>home</Link>
-                        <Link ><span>#</span>work</Link>
-                        <Link ><span>#</span>about-me</Link>
-                        <Link ><span>#</span>Contacts</Link>
+                        <Link className={`${path === "" ? "color-white" : "color-gray"}`} to='/'><span>#</span>home</Link>
+                        <Link className={`${path === "projects" ? "color-white" : "color-gray"}`} to='/projects'><span>#</span>work</Link>
+                        <Link className={`${path === "about" ? "color-white" : "color-gray"}`} to='/about'><span>#</span>about-me</Link>
+                        <Link className={`${path === "contacts" ? "color-white" : "color-gray"}`} to='/contacts'><span>#</span>Contacts</Link>
                     </div>
                     <div className="link-icon">
                         <a href='https://github.com/MehidGN' target='_blank' rel="noreferrer"><GoMarkGithub className='icon'/></a>

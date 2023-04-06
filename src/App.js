@@ -4,6 +4,7 @@ import './App.scss';
 import Home from './Pages/Home/Home';
 import Contacts from './Pages/Contact/Contacts';
 import AllProjects from './Pages/AllProjects/AllProjects';
+import AboutPage from './Pages/About/AboutPage';
 
 function App() {
 
@@ -11,14 +12,18 @@ function App() {
   
   const router = createBrowserRouter([{
     path: "/",
-    element: <Home />,},
+    element: <Home/>,},
     {
       path: "/contacts",
-      element: <Contacts />,
+      element: <Contacts path={"contacts"} />,
     },
     {
       path: "/projects",
-      element: <AllProjects />,
+      element: <AllProjects path={"projects"} />,
+    },
+    {
+      path: "/about",
+      element: <AboutPage path={"about"} />,
     }
   ])
   return (

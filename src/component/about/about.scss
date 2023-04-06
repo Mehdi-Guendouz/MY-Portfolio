@@ -70,6 +70,12 @@
                 border: 1px solid #C778DD;
                 width: fit-content;
                 cursor: pointer;
+
+                transition: all .2s;
+
+                &:hover{
+                    background-color: rgba(199, 120, 221, 0.2);
+                }
             }
         }
 

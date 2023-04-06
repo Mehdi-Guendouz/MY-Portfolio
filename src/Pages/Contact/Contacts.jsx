@@ -23,14 +23,22 @@ const Contacts = ({path}) => {
                 <div className="media-container">
                     <h3><span>#</span>All-Media</h3>
                     <div className="social">
-                        <a href='https://github.com/MehidGN' target='_blank' rel="noreferrer"><GoMarkGithub className='icon'/> /MehidGN</a>
-                        <a href='https://www.linkedin.com/in/mehdi-guendouz-06b59b225/' target='_blank' rel="noreferrer"><SiLinkedin className='icon'/> /mehdi-guendouz</a>
-                        <a href='https://www.instagram.com/mehdi__guendouz/' target='_blank' rel="noreferrer"><RiInstagramFill className='icon'/> /mehdi__guendouz</a>
-                        <a href="mailto:m_guendouz@estin.dz" target='_blank' rel="noreferrer"><MdEmail className='icon'/> /m_guendouz@estin.dz</a>
+                        <div data-aos="fade-right" data-aos-delay="100">
+                            <a href='https://github.com/MehidGN' target='_blank' rel="noreferrer"><GoMarkGithub className='icon'/> /MehidGN</a>
+                        </div>
+                        <div data-aos="fade-right" data-aos-delay="200">
+                            <a href='https://www.linkedin.com/in/mehdi-guendouz-06b59b225/' target='_blank' rel="noreferrer"><SiLinkedin className='icon'/> /mehdi-guendouz</a>
+                        </div>
+                        <div data-aos="fade-right" data-aos-delay="300">
+                            <a href='https://www.instagram.com/mehdi__guendouz/' target='_blank' rel="noreferrer"><RiInstagramFill className='icon'/> /mehdi__guendouz</a>
+                        </div>
+                        <div data-aos="fade-right" data-aos-delay="400">
+                            <a href="mailto:m_guendouz@estin.dz" target='_blank' rel="noreferrer"><MdEmail className='icon'/> /m_guendouz@estin.dz</a>
+                        </div>
                         <CopyButton value="Guendouz-Mehdi#5550" timeout={2000} >
                             {({ copied, copy }) => (
                                 <Tooltip label={copied ? 'Copied' : 'Copy'} withArrow position="right">
-                                    <div className="item" onClick={copy}>
+                                    <div className="item" data-aos="fade-right" data-aos-delay="500" onClick={copy}>
                                         <SiDiscord className='icon'/> 
                                         <span>/Guendouz-Mehdi#5550</span>
                                     </div>

@@ -115,6 +115,14 @@
                     color: #ABB2BF;
                     padding: 10px ;
                     line-height: 32px;
+
+                    .important{
+                        color: #C778DD;
+
+                        span{
+                            color: white;
+                        }
+                    }
                 }
             }
         }

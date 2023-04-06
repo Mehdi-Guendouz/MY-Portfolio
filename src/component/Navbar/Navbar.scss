@@ -18,6 +18,8 @@
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+        animation: linkDrop .5s .5s  ease-in forwards;
+        transform: translateY(-350px);
 
         .line-div{
             height: 200px;
@@ -102,11 +104,19 @@
     }
 }
 
+
+@keyframes linkDrop {   
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 @media (max-width: 1044px) {
     .nav-container{
         
         .falling-contact{
             left: -40px;
+            
 
             .line-div{
                 height: 140px;

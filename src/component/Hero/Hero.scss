@@ -32,6 +32,7 @@
             color: #ABB2BF;
             font-size: 16px;
             font-weight: 400;
+            line-height: 26px;
         }
 
         a{
@@ -42,6 +43,11 @@
             border: 1px solid #C778DD;
             width: fit-content;
             cursor: pointer;
+            transition: all .2s;
+
+            &:hover{
+                background-color: rgba(199, 120, 221, 0.2);
+            }
         }
 
 
@@ -82,7 +88,7 @@
             .square{
                 width: 16px;
                 height: 16px;
-                background-color: #C778DD;
+                background-color: #2ecc71;
                 margin-left: 10px;
             }
         }

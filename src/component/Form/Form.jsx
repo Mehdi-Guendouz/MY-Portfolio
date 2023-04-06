@@ -34,7 +34,7 @@ const Form = () => {
     }
 
     return (
-        <div className='form-container'>
+        <div className='form-container' data-aos="zoom-in-up">
             <form onSubmit={handleSubmit} ref={form}>
                 <div className="item">
                     <div className="form-item">

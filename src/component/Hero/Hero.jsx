@@ -40,16 +40,16 @@ const Hero = () => {
 
 
         <div className='hero-container' >
-            <div className="left">
-                <h1>Hi!! I AM Mehdi Your <br className='break-line' /> <TypingEffect words={words} /> <br /><span className='typing'>Web Developer</span></h1>
+            <div className="left" data-aos="fade-right">
+                <h1>Hi!! I AM Mehdi your <br className='break-line' /> <TypingEffect words={words} /> <br /><span className='typing'>Web Developer</span></h1>
                 <p>Crafting digital experiences with passion and <br /> precision</p>
-                <Link to={"/"}>Contact me !!</Link>
+                <Link to={"/contacts"}>Contact me !!</Link>
             </div>
-            <div className="right">
+            <div className="right" data-aos="fade-left">
                 <img src="./images/portfolioTest.JPG" alt="" />
                 <div className='card'>
                     <div className="square"></div>
-                    <div className="content">currently working on  <span> portfolio</span></div>
+                    <div className="content">currently open to <span>work</span></div>
                 </div>
             </div>
         </div>

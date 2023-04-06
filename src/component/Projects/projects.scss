@@ -16,11 +16,6 @@
             display: flex;
             align-items: center;
             gap: 20px;
-            
-            span{
-                font-size: 16px;
-                font-weight: 500;
-            }
 
             h3{
                 font-size: 32px;
@@ -38,6 +33,12 @@
                 width: 500px;
                 background-color: #C778DD;
             }
+        }
+        
+        a{
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
         }
         
     }
@@ -101,14 +102,17 @@
                     a{
                         text-decoration: none;
                         padding: 8px 16px;
-                        transition: all 0.5s;
+                        transition: all 0.3s;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
                     }
 
                     .live{
                         border: 1px solid #C778DD;
                         color: white;
 
-                        :hover{
+                        &:hover{
                             background-color: rgba(199, 120, 221, 0.2);
                         }
                     }
@@ -117,7 +121,7 @@
                         border: 1px solid #ABB2BF;
                         color: white;
 
-                        :hover{
+                        &:hover{
                             background: rgba(171, 178, 191, 0.2);
                         }
                     }
@@ -160,13 +164,10 @@
                     }
                 }
 
-                .line{
-                    width: 100px;
-                }
             }
         
 
-        span{
+        a{
            font-size: 14px;
         }
 

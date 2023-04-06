@@ -4,7 +4,7 @@ import "./Quote.scss"
 const Quote = () => {
     return (
         <div className='quote-container'>
-            <div className='quote'>
+            <div className='quote' data-aos="zoom-in-up">
                 <div className="top">
                     <div className='icon'>
                         <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">

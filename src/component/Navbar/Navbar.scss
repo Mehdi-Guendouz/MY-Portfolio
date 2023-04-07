@@ -207,6 +207,7 @@
         transform: translateY(80px);
         top: 0;
         animation: menuDrop 0.7s cubic-bezier(0.7, -0.13,0.58, 1.38);
+        z-index: 10;
 
         .sidebar{
             position: relative;

@@ -13,8 +13,8 @@ const AllProjects = ({path}) => {
                     <h1><span>/</span>Projects</h1>
                     <p>Check my projects</p>
                 </div>
-                <Projects title={"complete-apps"}/>
-                <Projects title={"small-projects"}/>
+                <Projects title={"complete-apps"} typeProject={"big"}/>
+                <Projects title={"small-projects"} typeProject={"small"}/>
             </div>
             <Footer />
         </div>

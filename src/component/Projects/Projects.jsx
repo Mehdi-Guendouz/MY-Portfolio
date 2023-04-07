@@ -1,9 +1,11 @@
 import React from 'react';
 import "./projects.scss"
 import Card from './Card';
+import { projects , smallProjects } from '../../data';
 import { Link } from 'react-router-dom';
 
-const Projects = ({title}) => {
+const Projects = ({title , typeProject}) => {
+
     const view = "View all ~~>"
     return (
         <div className='project-container'>
@@ -17,10 +19,9 @@ const Projects = ({title}) => {
                 <Link to="/projects">{view}</Link>
             </div>
             <div className="work">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {typeProject === "big" ? projects.map(project => <Card project={project} key={project.id} />)
+                : smallProjects.map(project => <Card project={project} key={project.id} />)
+                }
             </div>
         </div>
     );

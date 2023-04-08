@@ -13,16 +13,16 @@ const Form = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        emailjs.sendForm('service_3m3h17h', 'template_sjrduof', form.current, 'CQ0kvwObB2EV7aG6x')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PROFILE_KEY)
           .then((result) => {
-              console.log(result.text);
+            //   console.log(result.text);
               setName("")
               setEmail("")
               setTitle("")
               setMessage("")
               if(result){
                 setError(false)
-                console.log(error, result.text)
+                // console.log(error, result.text)
               }
               setSent(true)
           }, (error) => {

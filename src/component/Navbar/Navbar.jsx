@@ -33,7 +33,8 @@ const Navbar = ({path = ""}) => {
 
             {/* sidebar  */}
 
-            {!menu ? <img src="./icons/burger.png" alt="menu" className='menu-icons' onClick={() => setMenu(prev => !prev)}/> : <img src="./icons/close.png" alt="menu" onClick={() => setMenu(prev => !prev)}  className='menu-icons'/>}
+            {!menu ? <img src="./icons/burger.png" alt="menu" className='menu-icons' onClick={() => setMenu(prev => !prev)}/> 
+            : <img src="./icons/close.png" alt="menu" onClick={() => setMenu(prev => !prev)}  className='menu-icons'/>}
             {menu && <div className="sidebar-container">
                 <div className="sidebar">
                     <div className="links">

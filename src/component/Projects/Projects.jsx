@@ -4,9 +4,9 @@ import Card from './Card';
 import { projects , smallProjects } from '../../data';
 import { Link } from 'react-router-dom';
 
-const Projects = ({title , typeProject}) => {
+const Projects = ({title , typeProject , view=false}) => {
 
-    const view = "View all ~~>"
+    
     return (
         <div className='project-container'>
             <div className="top" data-aos="fade-right"
@@ -16,7 +16,7 @@ const Projects = ({title , typeProject}) => {
                     <h3><span>#</span>{title}</h3>
                     <div className='line'></div>
                 </div>
-                <Link to="/projects">{view}</Link>
+                {view && <Link to="/projects">{"View all ~~>"}</Link>}
             </div>
             <div className="work">
                 {typeProject === "big" ? projects.map(project => <Card project={project} key={project.id} />)

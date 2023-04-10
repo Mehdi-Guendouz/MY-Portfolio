@@ -32,7 +32,7 @@ const Skills = () => {
                     </div>
                     <div className="item fourth">
                         <h4>DataBases</h4>
-                        <p><span className='important'>#<span>MongDb</span></span> MySQL</p>
+                        <p><span className='important'>#<span>MongoDb</span></span> MySQL</p>
                     </div>
                     <div className="item fifth">
                         <h4>Tools</h4>

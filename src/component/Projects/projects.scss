@@ -132,6 +132,44 @@
     }
 }
 
+@media (min-width: 1600px){
+    .project-container{
+        .top{
+            
+            div{
+                h3{
+                    font-size: 38px;
+                }
+            }
+
+            a{
+                font-size: 18px;
+            }
+        }
+
+        .work{
+            .card-item{
+
+                p{
+                    font-size: 20px;
+                }
+
+                .desc{
+                    h3{
+                        font-size: 26px;
+                    }
+
+                    .btn-container{
+                        a{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1250px)  {
    .project-container{

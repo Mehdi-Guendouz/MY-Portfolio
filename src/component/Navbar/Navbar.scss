@@ -111,6 +111,36 @@
     }
 }
 
+@media (min-width: 1600px) {
+      .nav-container{
+        
+        .falling-contact{
+            
+            .icons{
+                a{
+                    .icon{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        h1{
+            a{
+                font-size: 24px;
+            }
+        }
+
+        nav{
+            ul{
+                a{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1044px) {
     .nav-container{
         

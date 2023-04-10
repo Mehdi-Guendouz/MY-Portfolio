@@ -76,6 +76,45 @@
     }
 }
 
+@media (min-width: 1600px){
+    .footer-container{
+
+        .copyright{
+            font-size: 20px;
+        }
+        .top{
+            
+
+            .content{
+                
+                div{
+                    font-size: 20px;
+
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .media{
+                h3{
+                    font-size: 28px;
+
+                }
+                .icons{
+
+                    a{
+                        .icon{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 480px){
     .footer-container{

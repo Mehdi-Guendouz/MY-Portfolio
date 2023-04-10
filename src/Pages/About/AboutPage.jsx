@@ -27,7 +27,7 @@ const AboutPage = ({path}) => {
                     </div>
                     <div className="item" data-aos="fade-right" data-aos-delay="400">
                     <h4>DataBases</h4>
-                        <p><span className='important'>#<span>MongDb</span></span> MySQL</p>
+                        <p><span className='important'>#<span>MongoDb</span></span> MySQL</p>
                     </div>
                     <div className="item" data-aos="fade-right" data-aos-delay="500">
                     <h4>Tools</h4>

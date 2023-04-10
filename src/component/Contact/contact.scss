@@ -109,6 +109,38 @@
 }
 
 
+@media (min-width: 1600px){
+    .contact-container{
+        .top{
+            
+            div{
+                h3{
+                    font-size: 38px;
+                }
+            }
+        }
+
+        .bottom{
+            p{
+                font-size: 18px;
+            }
+
+            .message{
+                span{
+                    font-size: 18px;
+                }
+
+                .item{
+                    span{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media (max-width: 810px) {
     .contact-container{
         .top{

@@ -99,11 +99,34 @@
 }
 
 
+@media (min-width: 1600px){
+    .about-container{
+        .top{
+            
+            div{
+                h3{
+                    font-size: 38px;
+                }
+            }
+        }
+
+        .bottom{
+            .left{
+
+                p{
+                    font-size: 18px;
+                }
+
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 960px){
     .about-container{
-
-        
-
         .bottom{
             flex-direction: row;
             .right{

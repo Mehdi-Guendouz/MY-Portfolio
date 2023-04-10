@@ -102,6 +102,24 @@
     }
 }
 
+@media (min-width: 1600px){
+    .form-container{
+        
+        form{
+            .item{
+
+                .form-item{
+                    font-size: 18px;
+                }
+            }
+
+            button{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 880px){
     .form-container{

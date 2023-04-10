@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    // gap: 30px;
     padding: 150px 0;
 
     .top{
@@ -128,6 +127,33 @@
         }
     }
 
+}
+
+@media (min-width: 1600px){
+    .skills-container{
+        .top{
+            
+            div{
+                h3{
+                    font-size: 38px;
+                }
+            }
+        }
+
+        .bottom{
+            .content{
+
+                .item{
+                    h4{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

@@ -17,7 +17,7 @@ const Contact = ({title = true}) => {
                 </div>
             </div>}
             <div className="bottom" data-aos="fade-right">
-                <p>I'm open to exploring freelance opportunities as well as any other ways I can assist you. Don't hesitate to reach out and let me know what you need.</p>
+                <p>I'm excited to offer my services as a full-stack web developer. Whether you're looking to hire a freelancer or bring someone onto your team, I'm ready to take on your project and bring it to life!</p>
                 <div className="message">
                     <span>Message here</span>
                     

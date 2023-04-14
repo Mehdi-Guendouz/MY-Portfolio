@@ -32,8 +32,7 @@ const Contact = ({title = true}) => {
                         )}
                         </CopyButton>
                     <div className="item">
-                        <a href="mailto:m_guendouz@estin.dz" target='_blank' rel="noreferrer"><MdEmail className='icon'/></a>
-                        <span>/m_guendouz@estin.dz</span>
+                        <a href="mailto:m_guendouz@estin.dz" target='_blank' rel="noreferrer"><MdEmail className='icon'/><span>/m_guendouz@estin.dz</span></a>
                     </div>
                 </div>
             </div>
